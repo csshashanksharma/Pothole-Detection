@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['pothole']
+
+roboflow:
+  workspace: c-s-shashank-sharma-nqtrr
+  project: pothole-detection-new-syj2l-bwf0a
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/c-s-shashank-sharma-nqtrr/pothole-detection-new-syj2l-bwf0a/dataset/1

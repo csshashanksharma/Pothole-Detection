@@ -1,0 +1,6 @@
+train: /home/shashank/Desktop/Mini_project /dataset/pothole detection new.v1i.yolov8/train/images
+val: /home/shashank/Desktop/Mini_project /dataset/pothole detection new.v1i.yolov8/test/images
+
+nc: 1
+
+names: ['pothole']
