@@ -1,12 +1,53 @@
-# Pothole-Detection Using YOLO v8
-Overview
-This project utilizes YOLOv8 for pothole detection in images, videos, and real-time streams. Additional features include Maps integration for marking detected potholes and data logging to store location-based information.
+# Pothole Detection Using YOLOv8
 
-Features
-Real-time detection using webcam or video input
+# Overview
+This project aims to detect potholes in real-time using the **YOLOv8 Nano** model. Additional features include **Google Maps integration** to mark detected potholes and **data logging** for further analysis.
 
-Google Maps integration for tracking detected potholes
+## Features
+- **Real-time detection** using YOLOv8 Nano
+- **Google Maps integration** using `folium`
+- **Data logging** to store detected pothole locations
+- **Efficient annotation** using Roboflow
+- **Version control** using Git
 
-Data logging to store location and timestamp of detected potholes
+## Tools Used
+- **Python** – Primary programming language
+- **YOLOv8 Nano** – Lightweight object detection model
+- **OpenCV** – Image processing and real-time video analysis
+- **Folium** – Google Maps integration for pothole location tracking
+- **Git** – Version control for code management
+- **Roboflow** – Used for dataset annotation and preprocessing
 
-Optimized YOLOv8 model for accurate detection
+## Directory Structure
+```
+Pothole-Detection/
+│-- dataset/            # Contains training dataset
+│-- scripts/               # Python scripts for model training and detection
+│-- output/             # Stores detected pothole images and logs
+│-- README.md           # Project documentation
+│-- requirements.txt    # Dependencies 
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/csshashanksharma/Pothole-Detection.git
+   cd Pothole-Detection
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the pothole detection script:
+   ```bash
+   python traainYolov82.ipynb
+   ```
+
+## Usage
+- Ensure your webcam is connected (if using real-time detection)
+- Run the script and observe pothole detections on the video stream
+- The detected pothole locations will be plotted on a map using `folium`
+
+## Contributing
+Feel free to submit **issues** or **pull requests** for improvements!

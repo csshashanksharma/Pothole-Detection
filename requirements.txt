@@ -1,0 +1,6 @@
+opencv-python
+folium
+gitpython
+torch==1.13.0  # for YOLOv8
+roboflow
+yolov8 
