@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_634f9559469ddccfa9ee54daf8a68f4c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_634f9559469ddccfa9ee54daf8a68f4c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_634f9559469ddccfa9ee54daf8a68f4c = L.map(
+                "map_634f9559469ddccfa9ee54daf8a68f4c",
+                {
+                    center: [12.9156634, 77.5190908],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a428876460957d186a7da6293b2fd6b5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a428876460957d186a7da6293b2fd6b5.addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+            var marker_cc7e6aed6161f9cb11e5f827033e51ff = L.marker(
+                [12.9156634, 77.5190908],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_c7495e62d3fcb5491053dbb790e8c45d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06e7ee89e9136a67e6b3ef8000dcd809 = $(`<div id="html_06e7ee89e9136a67e6b3ef8000dcd809" style="width: 100.0%; height: 100.0%;">Confidence: [    0.86814]<br>Timestamp: 2025-01-15 15:50:15<br>Accuracy: 10.083000183105469m<br>Altitude: 761.3999633789062m<br>Image: pothole_detected_20250115_155015.jpg</div>`)[0];
+                popup_c7495e62d3fcb5491053dbb790e8c45d.setContent(html_06e7ee89e9136a67e6b3ef8000dcd809);
+            
+        
+
+        marker_cc7e6aed6161f9cb11e5f827033e51ff.bindPopup(popup_c7495e62d3fcb5491053dbb790e8c45d)
+        ;
+
+        
+    
+    
+            var marker_e2405ada00344f9cf6b390c1f4d1de15 = L.marker(
+                [12.9156634, 77.5190908],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_f0176061a0f8794af498a8e3fa2f0fe9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ea760841904933bc44844fd2fc3265a = $(`<div id="html_4ea760841904933bc44844fd2fc3265a" style="width: 100.0%; height: 100.0%;">Confidence: [    0.73183]<br>Timestamp: 2025-01-15 15:50:15<br>Accuracy: 10.083000183105469m<br>Altitude: 761.3999633789062m<br>Image: pothole_detected_20250115_155015.jpg</div>`)[0];
+                popup_f0176061a0f8794af498a8e3fa2f0fe9.setContent(html_4ea760841904933bc44844fd2fc3265a);
+            
+        
+
+        marker_e2405ada00344f9cf6b390c1f4d1de15.bindPopup(popup_f0176061a0f8794af498a8e3fa2f0fe9)
+        ;
+
+        
+    
+    
+            var marker_af3ab635c2ba77d3ac96cbe9e816fde8 = L.marker(
+                [12.9156634, 77.5190908],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_b612d1e46c9f7e24ef9649243dd2159e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9cbc0330d020580d27467e012f43d57 = $(`<div id="html_e9cbc0330d020580d27467e012f43d57" style="width: 100.0%; height: 100.0%;">Confidence: [    0.45624]<br>Timestamp: 2025-01-15 15:50:15<br>Accuracy: 10.083000183105469m<br>Altitude: 761.3999633789062m<br>Image: pothole_detected_20250115_155015.jpg</div>`)[0];
+                popup_b612d1e46c9f7e24ef9649243dd2159e.setContent(html_e9cbc0330d020580d27467e012f43d57);
+            
+        
+
+        marker_af3ab635c2ba77d3ac96cbe9e816fde8.bindPopup(popup_b612d1e46c9f7e24ef9649243dd2159e)
+        ;
+
+        
+    
+    
+            var marker_dbe0ccb562ed2f950063c13779144a6d = L.marker(
+                [12.915462, 77.5190699],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_15229b2773dae913305e08028e1a5a85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03c4836e1eb94f25eb66f62cc172e201 = $(`<div id="html_03c4836e1eb94f25eb66f62cc172e201" style="width: 100.0%; height: 100.0%;">Confidence: [    0.86814]<br>Timestamp: 2025-01-15 22:25:10<br>Accuracy: 176.56700134277344m<br>Altitude: 761.3999633789062m<br>Image: pothole_detected_20250115_222509.jpg</div>`)[0];
+                popup_15229b2773dae913305e08028e1a5a85.setContent(html_03c4836e1eb94f25eb66f62cc172e201);
+            
+        
+
+        marker_dbe0ccb562ed2f950063c13779144a6d.bindPopup(popup_15229b2773dae913305e08028e1a5a85)
+        ;
+
+        
+    
+    
+            var marker_c27dc625e59c25be5f8a569fa09246f7 = L.marker(
+                [12.915462, 77.5190699],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_4538fa536c97c7bc73f38e8bc0ad0284 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d203dc8e05e1b57177d47f5ae3b5720e = $(`<div id="html_d203dc8e05e1b57177d47f5ae3b5720e" style="width: 100.0%; height: 100.0%;">Confidence: [    0.73183]<br>Timestamp: 2025-01-15 22:25:10<br>Accuracy: 176.56700134277344m<br>Altitude: 761.3999633789062m<br>Image: pothole_detected_20250115_222509.jpg</div>`)[0];
+                popup_4538fa536c97c7bc73f38e8bc0ad0284.setContent(html_d203dc8e05e1b57177d47f5ae3b5720e);
+            
+        
+
+        marker_c27dc625e59c25be5f8a569fa09246f7.bindPopup(popup_4538fa536c97c7bc73f38e8bc0ad0284)
+        ;
+
+        
+    
+    
+            var marker_b77c30b0e1c03010d6407661c1fe3ed9 = L.marker(
+                [12.915462, 77.5190699],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_ea046425a0664255cbff205423189c64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ac66ba4c6dd8d7bf99c4f18c764cc2e = $(`<div id="html_7ac66ba4c6dd8d7bf99c4f18c764cc2e" style="width: 100.0%; height: 100.0%;">Confidence: [    0.45624]<br>Timestamp: 2025-01-15 22:25:10<br>Accuracy: 176.56700134277344m<br>Altitude: 761.3999633789062m<br>Image: pothole_detected_20250115_222509.jpg</div>`)[0];
+                popup_ea046425a0664255cbff205423189c64.setContent(html_7ac66ba4c6dd8d7bf99c4f18c764cc2e);
+            
+        
+
+        marker_b77c30b0e1c03010d6407661c1fe3ed9.bindPopup(popup_ea046425a0664255cbff205423189c64)
+        ;
+
+        
+    
+    
+            var marker_8ab94c1a5cf7133223b998a7d8afc8aa = L.marker(
+                [12.9412817, 77.5657165],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_0d3a8116acc3e47c820f49430c95c62c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41d2ab206c4d2738a38d3041dff5ad6f = $(`<div id="html_41d2ab206c4d2738a38d3041dff5ad6f" style="width: 100.0%; height: 100.0%;">Confidence: [    0.76856]<br>Timestamp: 2025-01-16 14:15:15<br>Accuracy: 500.0m<br>Altitude: 866.5999755859375m<br>Image: pothole_detected_20250116_141515.jpg</div>`)[0];
+                popup_0d3a8116acc3e47c820f49430c95c62c.setContent(html_41d2ab206c4d2738a38d3041dff5ad6f);
+            
+        
+
+        marker_8ab94c1a5cf7133223b998a7d8afc8aa.bindPopup(popup_0d3a8116acc3e47c820f49430c95c62c)
+        ;
+
+        
+    
+    
+            var marker_3696eca4db2892b6051c82e3864346cd = L.marker(
+                [12.9412817, 77.5657165],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_33ffe4f501adc1a258deb69524a67afc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2687a39cccd6d707adc206aba222ecb = $(`<div id="html_d2687a39cccd6d707adc206aba222ecb" style="width: 100.0%; height: 100.0%;">Confidence: [    0.51425]<br>Timestamp: 2025-01-16 14:15:15<br>Accuracy: 500.0m<br>Altitude: 866.5999755859375m<br>Image: pothole_detected_20250116_141515.jpg</div>`)[0];
+                popup_33ffe4f501adc1a258deb69524a67afc.setContent(html_d2687a39cccd6d707adc206aba222ecb);
+            
+        
+
+        marker_3696eca4db2892b6051c82e3864346cd.bindPopup(popup_33ffe4f501adc1a258deb69524a67afc)
+        ;
+
+        
+    
+    
+            var marker_44bea3fe8483cc4241ed8da3f1f16860 = L.marker(
+                [12.9412817, 77.5657165],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_5b1e432a827010e11ec6abd6c81bdbdb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ce68a3b1dff234fa80ff2966d850c94 = $(`<div id="html_5ce68a3b1dff234fa80ff2966d850c94" style="width: 100.0%; height: 100.0%;">Confidence: [    0.39893]<br>Timestamp: 2025-01-16 14:15:15<br>Accuracy: 500.0m<br>Altitude: 866.5999755859375m<br>Image: pothole_detected_20250116_141515.jpg</div>`)[0];
+                popup_5b1e432a827010e11ec6abd6c81bdbdb.setContent(html_5ce68a3b1dff234fa80ff2966d850c94);
+            
+        
+
+        marker_44bea3fe8483cc4241ed8da3f1f16860.bindPopup(popup_5b1e432a827010e11ec6abd6c81bdbdb)
+        ;
+
+        
+    
+    
+            var marker_ec5f5933d2d9e331de2bd32284847871 = L.marker(
+                [12.9418465, 77.5653704],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_87557bba73a02abd7e4c2251904c508e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e81dc381ff77a919a2d24bf68e8abc1 = $(`<div id="html_1e81dc381ff77a919a2d24bf68e8abc1" style="width: 100.0%; height: 100.0%;">Confidence: [    0.76856]<br>Timestamp: 2025-01-16 16:20:35<br>Accuracy: 500.0m<br>Altitude: 853.8999633789062m<br>Image: pothole_detected_20250116_162035.jpg</div>`)[0];
+                popup_87557bba73a02abd7e4c2251904c508e.setContent(html_1e81dc381ff77a919a2d24bf68e8abc1);
+            
+        
+
+        marker_ec5f5933d2d9e331de2bd32284847871.bindPopup(popup_87557bba73a02abd7e4c2251904c508e)
+        ;
+
+        
+    
+    
+            var marker_1999c9b1152ffb309b7cbb164a4009c2 = L.marker(
+                [12.9418465, 77.5653704],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_90841cd56359ec31bf930a87b343437c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2149ee86e69c89652ed16c37092f9f3 = $(`<div id="html_a2149ee86e69c89652ed16c37092f9f3" style="width: 100.0%; height: 100.0%;">Confidence: [    0.51425]<br>Timestamp: 2025-01-16 16:20:35<br>Accuracy: 500.0m<br>Altitude: 853.8999633789062m<br>Image: pothole_detected_20250116_162035.jpg</div>`)[0];
+                popup_90841cd56359ec31bf930a87b343437c.setContent(html_a2149ee86e69c89652ed16c37092f9f3);
+            
+        
+
+        marker_1999c9b1152ffb309b7cbb164a4009c2.bindPopup(popup_90841cd56359ec31bf930a87b343437c)
+        ;
+
+        
+    
+    
+            var marker_d9dc6c667701773d74b344d91b31d95b = L.marker(
+                [12.9418465, 77.5653704],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_b7f2ee6bf8c2865ea1185ac1d5ca6089 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c449604c1e870bbb0a521b4f14bfa0e7 = $(`<div id="html_c449604c1e870bbb0a521b4f14bfa0e7" style="width: 100.0%; height: 100.0%;">Confidence: [    0.39893]<br>Timestamp: 2025-01-16 16:20:35<br>Accuracy: 500.0m<br>Altitude: 853.8999633789062m<br>Image: pothole_detected_20250116_162035.jpg</div>`)[0];
+                popup_b7f2ee6bf8c2865ea1185ac1d5ca6089.setContent(html_c449604c1e870bbb0a521b4f14bfa0e7);
+            
+        
+
+        marker_d9dc6c667701773d74b344d91b31d95b.bindPopup(popup_b7f2ee6bf8c2865ea1185ac1d5ca6089)
+        ;
+
+        
+    
+    
+            var marker_baa102ebe2c267082b2687c309524db4 = L.marker(
+                [12.9145466, 77.5187292],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_6d438956470de47e87c6c159ec866208 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae1383422dba055be863400063944c88 = $(`<div id="html_ae1383422dba055be863400063944c88" style="width: 100.0%; height: 100.0%;">Confidence: [    0.76856]<br>Timestamp: 2025-02-14 10:32:07<br>Accuracy: 500.0m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103207.jpg</div>`)[0];
+                popup_6d438956470de47e87c6c159ec866208.setContent(html_ae1383422dba055be863400063944c88);
+            
+        
+
+        marker_baa102ebe2c267082b2687c309524db4.bindPopup(popup_6d438956470de47e87c6c159ec866208)
+        ;
+
+        
+    
+    
+            var marker_e32a44c7e76be3aa99164ad97943dbc8 = L.marker(
+                [12.9145466, 77.5187292],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_1b0c882ae0322409546f08f9f900b000 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_115348452c5be90b8b4f38ec8b016e9c = $(`<div id="html_115348452c5be90b8b4f38ec8b016e9c" style="width: 100.0%; height: 100.0%;">Confidence: [    0.51425]<br>Timestamp: 2025-02-14 10:32:07<br>Accuracy: 500.0m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103207.jpg</div>`)[0];
+                popup_1b0c882ae0322409546f08f9f900b000.setContent(html_115348452c5be90b8b4f38ec8b016e9c);
+            
+        
+
+        marker_e32a44c7e76be3aa99164ad97943dbc8.bindPopup(popup_1b0c882ae0322409546f08f9f900b000)
+        ;
+
+        
+    
+    
+            var marker_af2737f3b567e3977d43649fa75c75bd = L.marker(
+                [12.9145466, 77.5187292],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_22599974f2818c041370ac7b70ff9e5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6e8a82630b160b0960b927ec23c61e3 = $(`<div id="html_c6e8a82630b160b0960b927ec23c61e3" style="width: 100.0%; height: 100.0%;">Confidence: [    0.39893]<br>Timestamp: 2025-02-14 10:32:07<br>Accuracy: 500.0m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103207.jpg</div>`)[0];
+                popup_22599974f2818c041370ac7b70ff9e5b.setContent(html_c6e8a82630b160b0960b927ec23c61e3);
+            
+        
+
+        marker_af2737f3b567e3977d43649fa75c75bd.bindPopup(popup_22599974f2818c041370ac7b70ff9e5b)
+        ;
+
+        
+    
+    
+            var marker_a2a27b1dd50ed383f55c560b02143d25 = L.marker(
+                [12.9155986, 77.5191349],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_7e5016c54242758c6e00366029b17b9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc8141177aad651e3bf2a92f63f1814b = $(`<div id="html_fc8141177aad651e3bf2a92f63f1814b" style="width: 100.0%; height: 100.0%;">Confidence: [    0.76856]<br>Timestamp: 2025-02-14 10:34:28<br>Accuracy: 275.239990234375m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103428.jpg</div>`)[0];
+                popup_7e5016c54242758c6e00366029b17b9a.setContent(html_fc8141177aad651e3bf2a92f63f1814b);
+            
+        
+
+        marker_a2a27b1dd50ed383f55c560b02143d25.bindPopup(popup_7e5016c54242758c6e00366029b17b9a)
+        ;
+
+        
+    
+    
+            var marker_7362d52b2b1112b3df2af7f6c1941783 = L.marker(
+                [12.9155986, 77.5191349],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_bc37c5ccb185e49ba600fc995d46d4e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_583bba3eb97360bb1849b72b7f574e6d = $(`<div id="html_583bba3eb97360bb1849b72b7f574e6d" style="width: 100.0%; height: 100.0%;">Confidence: [    0.51425]<br>Timestamp: 2025-02-14 10:34:28<br>Accuracy: 275.239990234375m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103428.jpg</div>`)[0];
+                popup_bc37c5ccb185e49ba600fc995d46d4e0.setContent(html_583bba3eb97360bb1849b72b7f574e6d);
+            
+        
+
+        marker_7362d52b2b1112b3df2af7f6c1941783.bindPopup(popup_bc37c5ccb185e49ba600fc995d46d4e0)
+        ;
+
+        
+    
+    
+            var marker_87cd0ca2ca244e9401dda630b28329bb = L.marker(
+                [12.9155986, 77.5191349],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_075ad97b2683b92bfc6dac254411fdb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88acc24dc7d25921f343f9db08bc5a54 = $(`<div id="html_88acc24dc7d25921f343f9db08bc5a54" style="width: 100.0%; height: 100.0%;">Confidence: [    0.39893]<br>Timestamp: 2025-02-14 10:34:28<br>Accuracy: 275.239990234375m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103428.jpg</div>`)[0];
+                popup_075ad97b2683b92bfc6dac254411fdb7.setContent(html_88acc24dc7d25921f343f9db08bc5a54);
+            
+        
+
+        marker_87cd0ca2ca244e9401dda630b28329bb.bindPopup(popup_075ad97b2683b92bfc6dac254411fdb7)
+        ;
+
+        
+    
+    
+            var marker_d619e72f661c884d1dfbd2c33313856f = L.marker(
+                [12.9171571, 77.5171267],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_1d16ca600dc2edd9a2915289d01c7851 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5375ab1fd3d2f8ec07a449422205e38f = $(`<div id="html_5375ab1fd3d2f8ec07a449422205e38f" style="width: 100.0%; height: 100.0%;">Confidence: [    0.76856]<br>Timestamp: 2025-02-14 10:36:29<br>Accuracy: 500.0m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103629.jpg</div>`)[0];
+                popup_1d16ca600dc2edd9a2915289d01c7851.setContent(html_5375ab1fd3d2f8ec07a449422205e38f);
+            
+        
+
+        marker_d619e72f661c884d1dfbd2c33313856f.bindPopup(popup_1d16ca600dc2edd9a2915289d01c7851)
+        ;
+
+        
+    
+    
+            var marker_8030ca3a5025f7f67b1be671bd3ddd3a = L.marker(
+                [12.9171571, 77.5171267],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_edc364cfefb025d9a688fc23de70e196 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79676234eec41f52af16734268e002f6 = $(`<div id="html_79676234eec41f52af16734268e002f6" style="width: 100.0%; height: 100.0%;">Confidence: [    0.51425]<br>Timestamp: 2025-02-14 10:36:29<br>Accuracy: 500.0m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103629.jpg</div>`)[0];
+                popup_edc364cfefb025d9a688fc23de70e196.setContent(html_79676234eec41f52af16734268e002f6);
+            
+        
+
+        marker_8030ca3a5025f7f67b1be671bd3ddd3a.bindPopup(popup_edc364cfefb025d9a688fc23de70e196)
+        ;
+
+        
+    
+    
+            var marker_4b563022ea1c9655239eaa70601ccc41 = L.marker(
+                [12.9171571, 77.5171267],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_a116ce50baf3f5195d39e06b2fb9c0a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00bc9b56a0882e9d57f2db6d243603c2 = $(`<div id="html_00bc9b56a0882e9d57f2db6d243603c2" style="width: 100.0%; height: 100.0%;">Confidence: [    0.39893]<br>Timestamp: 2025-02-14 10:36:29<br>Accuracy: 500.0m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103629.jpg</div>`)[0];
+                popup_a116ce50baf3f5195d39e06b2fb9c0a1.setContent(html_00bc9b56a0882e9d57f2db6d243603c2);
+            
+        
+
+        marker_4b563022ea1c9655239eaa70601ccc41.bindPopup(popup_a116ce50baf3f5195d39e06b2fb9c0a1)
+        ;
+
+        
+    
+    
+            var marker_a51af3235de2a833c511fd829b99ed05 = L.marker(
+                [12.9170451, 77.517333],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_5c6dad497d1fc3605dc61f26d8ddb22c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_806a859a9d3bd4a9ac980ce7de165068 = $(`<div id="html_806a859a9d3bd4a9ac980ce7de165068" style="width: 100.0%; height: 100.0%;">Confidence: [    0.76856]<br>Timestamp: 2025-02-14 10:38:10<br>Accuracy: 500.0m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103810.jpg</div>`)[0];
+                popup_5c6dad497d1fc3605dc61f26d8ddb22c.setContent(html_806a859a9d3bd4a9ac980ce7de165068);
+            
+        
+
+        marker_a51af3235de2a833c511fd829b99ed05.bindPopup(popup_5c6dad497d1fc3605dc61f26d8ddb22c)
+        ;
+
+        
+    
+    
+            var marker_fbc9ac7ca0182710995c203deb160822 = L.marker(
+                [12.9170451, 77.517333],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_0b0c30a5de8a9a44b4ef1ca83bdd87b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18b23a194bff07a2bdf2cbf2b32e15e8 = $(`<div id="html_18b23a194bff07a2bdf2cbf2b32e15e8" style="width: 100.0%; height: 100.0%;">Confidence: [    0.51425]<br>Timestamp: 2025-02-14 10:38:10<br>Accuracy: 500.0m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103810.jpg</div>`)[0];
+                popup_0b0c30a5de8a9a44b4ef1ca83bdd87b0.setContent(html_18b23a194bff07a2bdf2cbf2b32e15e8);
+            
+        
+
+        marker_fbc9ac7ca0182710995c203deb160822.bindPopup(popup_0b0c30a5de8a9a44b4ef1ca83bdd87b0)
+        ;
+
+        
+    
+    
+            var marker_8604644844ce88c1098bb1543ea848a5 = L.marker(
+                [12.9170451, 77.517333],
+                {
+}
+            ).addTo(map_634f9559469ddccfa9ee54daf8a68f4c);
+        
+    
+        var popup_47cdf62856f2a2b505a0f1b04f224c81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71c60527c224e7503da326a99930bffb = $(`<div id="html_71c60527c224e7503da326a99930bffb" style="width: 100.0%; height: 100.0%;">Confidence: [    0.39893]<br>Timestamp: 2025-02-14 10:38:10<br>Accuracy: 500.0m<br>Altitude: 762.0999755859375m<br>Image: pothole_detected_20250214_103810.jpg</div>`)[0];
+                popup_47cdf62856f2a2b505a0f1b04f224c81.setContent(html_71c60527c224e7503da326a99930bffb);
+            
+        
+
+        marker_8604644844ce88c1098bb1543ea848a5.bindPopup(popup_47cdf62856f2a2b505a0f1b04f224c81)
+        ;
+
+        
+    
+</script>
+</html>
