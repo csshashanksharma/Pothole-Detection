@@ -26,7 +26,7 @@ Pothole-Detection/
 │-- output/             # Stores detected pothole images and logs
 │-- README.md           # Project documentation
 │-- requirements.txt    # Dependencies 
-
+```
 ## Installation
 1. Clone the repository:
    ```bash
